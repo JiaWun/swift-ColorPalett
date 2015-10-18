@@ -11,25 +11,25 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var rSlider: UISlider!
-    
+
     @IBOutlet weak var gSlider: UISlider!
-    
+
     @IBOutlet weak var bSlider: UISlider!
-    
+
     @IBAction func doChange(sender: UISlider) {
-        
+
         print("Hi");
-        
-        print(sender.value)
+//        print(sender.value)
+
         let color = UIColor.init(
             red: CGFloat(rSlider.value),
             green: CGFloat(gSlider.value),
             blue: CGFloat(bSlider.value),
             alpha: 1)
-        
+
         self.view.backgroundColor = color
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -42,4 +42,3 @@ class ViewController: UIViewController {
 
 
 }
-
