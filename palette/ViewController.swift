@@ -18,6 +18,8 @@ class ViewController: UIViewController {
     
     @IBAction func doChange(sender: UISlider) {
         
+        print("Hi");
+        
         print(sender.value)
         let color = UIColor.init(
             red: CGFloat(rSlider.value),
